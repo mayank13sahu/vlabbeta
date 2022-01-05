@@ -1,0 +1,17 @@
+p{
+  text-align: justify;
+  padding: 3%;
+}
+
+h1{
+  margin: 5% auto 3%;
+}
+
+.final_formula{
+  border-style: solid;
+  padding: 1rem;
+}
+
+code{
+  font-size: 1.25rem;
+}

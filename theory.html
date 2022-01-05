@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Theory</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css\theory.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">WheatstoneBridge</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="theory.html">Theory</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="simulator.html">Simulation</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Theory</h1>
+    <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+      <p>
+        In 1843, the English scientist Charles Wheatstone invented the bridge circuit bearing his name. It is widely
+        used for rapid and precise resistance measurements.WheatstoneBridge consists of network of fourresistance arms
+        forming a closed
+        circuit, with a dc sourceThe resistances R1, R2, and R4 are known, and the resistance R3 is to be determined.
+        The resistance R4 is variable. The meter between nodes b and c can be a sensitive ammeter or voltmeter.
+        <br>
+        <br>
+        In the use of the bridge, the resistance R4 is adjusted until the meter movement shows no deflection. Then Vg,
+        the galvanometer voltage, is zero, which means that nodes b and c must be at the same potential. Consequently,
+        the voltage drop
+        from a to b equals that from a to c. Also, the voltage drop from b to d equals that from c to d.
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <img src="images\THEORY WHEAT.png" alt="circuit">
+        <br>
+        <br>
+        <br>
+        <br>
+        Further, since the meter current is zero, the current I1 flows through resistor R1 and also through resistor R3.
+        Similarly, the current I2 flows through resistors R2, and R4.
+        <br>
+        <br>
+        Since
+        <code>V<sub>ab</sub> = V<sub>ac</sub>, then: I<sub>1</sub>R<sub>1</sub> = I<sub>2</sub>R<sub>2</sub>.</code>
+        <br>
+        <br>
+        Also,
+        <code>V<sub>bd</sub> = V<sub>cd</sub>, then: I<sub>1</sub>R<sub>3</sub> = I<sub>2</sub>R<sub>4</sub>.</code>
+        <br>
+        <br>
+        The division of equations yields: &emsp;&emsp;
+        <code>I<sub>1</sub>R<sub>1</sub> / I<sub>1</sub>R<sub>3</sub> = I<sub>2</sub>R<sub>2</sub> / I<sub>2</sub>R<sub>4</sub></code>
+        ,
+        <br>
+        <br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;which reduces to &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; <code
+          class="final_formula"> <b>R<sub>3</sub> = (R<sub>1</sub>*R<sub>4</sub>) / R<sub>2</sub></b> </code>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Wheatstone bridge balance equation)
+        <br>
+        <br>
+        This is the bridge balance equation. With the bridge balanced, this equation can be used to determine the
+        resistance R3 to a precision that is nominally the same as the precision of the resistances R1, R2, and R4.
+
+
+      </p>
+
+    </div>
+
+</body>
+
+</html>

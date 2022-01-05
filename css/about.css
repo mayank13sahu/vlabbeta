@@ -1,0 +1,23 @@
+.person1{
+  padding: 4% 3%;
+  height: 400px;
+}
+
+p{
+  font-size: 2rem;
+}
+
+a:hover{
+  text-decoration: none;
+}
+span{
+  font-size: 2rem;
+}
+
+.text{
+  margin: 3em 1em  0;
+}
+
+.image{
+  padding: 2rem  0 0;
+}

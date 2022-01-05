@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+
+    <title>Wheatstone Bridge</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">WheatstoneBridge</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="theory.html">Theory</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Simulation</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="procedure col-12">
+                <div class="procedure-content  shadow-lg p-3 mb-5 bg-white rounded">
+                    <h2 style="text-align: center;">Instructions</h2>
+                    <br />
+                    <ol>
+                        <li>
+                            Set the value of unknown resistor R3 whose value is needed to be found using wheatstone bridge.
+                        </li>
+                        <br />
+
+                        <li>Set the value of voltage source in Volts</li>
+                        <br />
+
+                        <li>
+                            Now set the values of resistors R<sub>1</sub> and R<sub>2</sub>.
+                        </li>
+                        <br />
+
+                        <li>
+                            Now change the value of R<sub>3</sub> using  slider until the
+                            galvanometer deflection tends to zero.
+                        </li>
+                        <br />
+                        <li>Note down the reading of unknown resistance R<sub>3</sub> whenever pop-up is shown in the screen.</li>
+                        <br />
+                        <li>
+                            To take more observation click on the reset button.
+                        </li>
+                        <br />
+                    </ol>
+                </div>
+                <br />
+
+                <div class="image-container ">
+                    <img src="images/wheatstonebridge.png" alt="bridge"
+                        class="bridge shadow-lg p-3 mb-5 bg-white rounded" draggable="false" />
+                    <input type="number" class="answer" id="vg">
+                </div>
+
+
+
+                <div class="inputs">
+                    <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+                        <div class="col-12">
+                            <h1>Controls</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- <label class="form-label" for="resistance_one">R1</label> -->
+                            <input type="number" id="resistance_one" class="form-control" placeholder="R1">
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="number" id="resistance_two" class="form-control" placeholder="R2">
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+                        <label for="resistance_four">R4</label>
+                        <input type="range" class="form-control-range" id="resistance_four" oninput="fun()">
+
+                        <div class="col">
+                            <input type="number" id="finalw">
+                        </div>
+                    </div>
+                    <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+                        <div class="col-12">
+                            <h1>Settings</h1>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <input type="number" id="resistance_three" class="form-control" placeholder="R3">
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="number" id="voltage" class="form-control" placeholder="Vin">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <br />
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
